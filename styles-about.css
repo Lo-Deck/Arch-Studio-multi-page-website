@@ -1,0 +1,207 @@
+
+.about .container-image-top{
+  display: block;    
+  background: hsla(0, 0%, 0%, 0.4);
+  width: 100%;
+}
+
+.about .top-image{
+  mix-blend-mode: multiply;
+}
+
+.about .title-page{
+  margin: 1.5rem 0 clamp(1.5rem, 0.5458rem + 4.0712vw, 2.5rem);
+}
+
+
+/*HERITAGE*/
+
+.heritage{
+  max-width: clamp(19.4375rem, 3.8125rem + 66.6667vw, 35.8125rem);
+  margin: clamp(3.5rem, -5.0878rem + 36.6412vw, 12.5rem) auto clamp(8rem, 2.2748rem + 24.4275vw, 14rem);
+}
+
+.heritage .line-top-page{
+  display: block;
+  width: 4.0625rem;
+  height: 0.0625rem;
+  background: #C8CCD8;
+  margin-bottom: clamp(3rem, 5.9313rem + -6.1069vw, 4.5rem);
+}
+
+.heritage .title-page{
+  margin-bottom: 3.5rem;
+}
+
+.heritage .text{
+  margin-bottom: 1.5rem;
+}
+
+.image-desktop-heritage{
+  display: none;
+}
+
+/*LEADERS*/
+
+.container-leaders{
+  max-width: clamp(19.4375rem, 3.8721rem + 66.4122vw, 35.75rem);
+  margin: 0 auto 10rem;
+}
+
+.container-leaders-title{
+  margin-bottom: 4rem;
+}
+
+.leader{
+  width: 19.4375rem;
+  margin: 0 auto;
+  margin-bottom: 5.375rem;
+}
+
+.container-image-hover{
+  position: relative;
+}
+
+.leader .hover{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.5rem;
+  background: hsla(0, 0%, 0%, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.leader:hover{
+  cursor: pointer;
+}
+
+.leader:hover .container-image-hover .hover{
+  cursor: pointer;
+  display: flex;
+}
+
+.leader-image{
+  width: 100%;
+}
+
+.leader-title{
+  margin-top: 1.25rem;
+}
+
+.leader-title span{
+  display: block;
+}
+
+
+/***TABLET***/
+
+@media screen and (min-width: 48rem){
+
+
+  /*MAIN*/
+
+  .about .container-image-top{
+    width: clamp(35.8125rem, 31.3839rem + 9.2262vw, 39.6875rem);
+  }
+
+  .about .container-text .big-contact{
+    margin: 0 0 0 auto;
+    position: absolute;
+      top: clamp(-8.75rem, -0.7143rem + -8.9286vw, -5rem); left: unset; right: 0;
+  }
+
+
+  /*HERITAGE*/
+
+  .heritage .title-page{
+    margin-bottom: 4rem;
+  }
+
+
+  /*LEADERS*/
+
+  .container-leaders{
+    max-width: 35.75rem;
+    margin: 0 auto 1rem; 
+  }
+
+  .display-container-leaders{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  .leader{
+    width: 17.5rem;
+    margin-bottom: 6rem;
+  }
+
+  .about .footer{
+    margin-top: 8.5rem;
+  }
+  
+}
+
+
+
+/***DESKTOP***/
+
+@media screen and (min-width: 90rem){
+
+
+  /*MAIN*/
+
+  .about .container-text .big-contact{
+    position: absolute;
+      top: clamp(-8.75rem, -0.7143rem + -8.9286vw, -5rem); left: unset; right: -0.5rem;
+  }
+
+
+  /*HERITAGE*/
+
+  .heritage{
+    max-width: 69.375rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .display-heritage-desktop{
+    width: 27.875rem;
+  }
+
+  .heritage .line-top-page{
+    margin-bottom: 5rem;
+  }
+
+  .image-desktop-heritage{
+    display: block;
+    width: 33.75rem;
+    height: 35.5rem;
+  }
+
+
+  /*LEADERS*/
+
+  .container-leaders{
+    max-width: 69.375rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .display-container-leaders{
+    width: 45.625rem;
+  }
+
+  .leader{
+    width: 21.875rem;
+    margin-bottom: 4rem;
+  }
+
+  .about .footer{
+    margin-top: 6rem;
+  }
+
+}

@@ -1,0 +1,819 @@
+@import "styles-portfolio.css";
+@import "styles-about.css";
+@import "styles-contact.css";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  min-width: 17.5rem;
+  min-height: 100vh;    
+  text-align: left;
+}
+
+
+/**TEXT**/
+
+.league-spartan-medium{
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.125rem;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #60636D;
+  line-height: 1.3;
+}
+
+.league-spartan-bold{
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #1B1D23;
+}
+
+/****/
+
+img{
+  display: block;
+}
+
+.button{
+  display: block;
+  background: transparent;
+  border-style: none;
+}
+
+.button:hover{
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/*HEADER*/
+
+.container-header{
+  background: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.container-line-header{
+  display: none;
+}
+
+.container-menu{
+  max-width: clamp(19.4375rem, 3.8125rem + 66.6667vw, 35.8125rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: clamp(2rem, 0.5687rem + 6.1069vw, 3.5rem) 0;
+}
+
+.logo-header{
+  width: clamp(4.8125rem, 3.6794rem + 4.8346vw, 6rem);
+  height: clamp(2rem, 1.5229rem + 2.0356vw, 2.5rem);
+}
+
+.button-menu{
+  width: 2.5rem;
+  height: 1.0625rem;
+}
+
+
+  /*MENU*/
+
+.background{
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: hsla(0, 0%, 0%, 0.2);
+  position: fixed;
+  z-index: 1;
+}
+
+.menu{
+  display: none;
+  background: #EEEFF4;
+  max-width: 21.4375rem;
+  width: 100%;
+  height: 14.6875rem;
+  position: absolute;
+    bottom: -14.6875rem; right: 0;
+}
+
+.list-menu{
+  font-size: 2rem;
+  padding: 2.8rem;
+}
+
+.li-menu:not(:nth-of-type(3)){
+  margin-bottom: 1.25rem;
+}
+
+.li-menu:hover{
+  color: #1B1D23;
+}
+
+
+/*MAIN*/
+
+  /*MAIN HEADER*/
+
+.main-header{
+  max-width: clamp(23.4375rem, 11.6293rem + 50.3817vw, 35.8125rem);
+  margin: 0 auto;
+}
+
+.container-main-header{
+  max-width: clamp(23.4375rem, 11.6293rem + 50.3817vw, 35.8125rem);
+  background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.4) 100%),
+              url('./assets/home/mobile/image-hero-paramour.jpg') no-repeat center / cover;
+  margin: 0 auto;
+  padding: clamp(7.125rem, 2.8311rem + 18.3206vw, 11.625rem) 0 clamp(6.875rem, 2.9389rem + 16.7939vw, 11rem);
+}
+
+.container-main-header:not(:nth-of-type(1)){
+  display: none;
+}
+
+.container-main-header .container-text-header{
+  max-width: clamp(19.4375rem, 10.7304rem + 37.1501vw, 28.5625rem);
+  margin: 0 auto;
+}
+
+.main-title{
+  font-size: clamp(4rem, 2.0916rem + 8.1425vw, 6rem);
+  letter-spacing: clamp(-0.125rem, -0.0029rem + -0.2545vw, -0.0625rem);  
+  line-height: 0.8;
+  color: #fff;
+  margin-bottom: 0.8rem;
+}
+
+.main-header .text{
+  color: #fff;
+  margin-bottom: clamp(3.125rem, 8.0105rem + -10.1781vw, 5.625rem);
+}
+
+.button-portfolio{
+  background: #1B1D23;
+  color: #fff;
+  height: 4.5rem;
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2.25rem;
+}
+
+.button-portfolio:hover{
+  background: #979797;
+  transition: all 0.5s;
+}
+
+.main-header .button-portfolio{
+  width: 15.75rem;
+}
+
+.button-portfolio .arrow{
+  width: 1.5rem;
+  height: 1.125rem;
+  margin-left: 1.25rem;
+}
+
+.carousel{
+  display: none;
+}
+
+
+  /*MAIN WELCOME*/
+
+.article-welcome{
+  margin-top: 4.375rem;
+}
+
+.container-welcome-text{
+  width: clamp(19.4375rem, 3.8721rem + 66.4122vw, 35.75rem);
+  margin: 0 auto;
+}
+
+.big-welcome{
+  display: none;
+}
+
+.line-article{
+  background: #C8CCD8;
+  width: 4.0625rem;
+  height: 0.0625rem;
+}
+
+.article-welcome-title{
+  margin-top: 4.625rem;
+}
+
+.title-48px{
+  font-size: clamp(3rem, 1.5687rem + 6.1069vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: clamp(-0.125rem, -0.0029rem + -0.2545vw, -0.0625rem);
+}
+
+.article-welcome .text{
+  margin: 1.75rem 0;
+}
+
+.image-welcome{
+  display: none;
+}
+
+.section-link-about{
+  max-width: clamp(23.4375rem, 11.6293rem + 50.3817vw, 35.8125rem);
+  background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 0%, 0.6) 100%),
+              url('./assets/home/mobile/image-small-team.jpg') no-repeat center / cover;
+  margin: clamp(7.625rem, 0.9456rem + 28.4987vw, 14.625rem) auto 0;
+  padding: clamp(10.375rem, 12.8177rem + -5.0891vw, 11.625rem) 0 clamp(10.375rem, 12.0849rem + -3.5623vw, 11.25rem);
+}
+
+.container-link-text{
+  max-width: clamp(19.4375rem, 11.4461rem + 34.0967vw, 27.8125rem);
+  margin: 0 auto;
+}
+
+.section-link-about .title{
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.section-link-about .button-portfolio{
+  width: 11.6875rem;
+  padding: 0;
+}
+
+
+  /*MAIN FEATURED*/
+
+.article-featured{
+  max-width: clamp(19.4375rem, 3.8125rem + 66.6667vw, 35.8125rem);
+  margin: clamp(4.875rem, -2.7586rem + 32.57vw, 12.875rem) auto 0;
+}
+
+.featured{
+  background: linear-gradient(to bottom, hsla(169, 100%, 25%, 0.4), hsla(0, 0%, 0%, 0.4) 100%),
+              url('./assets/portfolio/mobile/image-del-sol.jpg') no-repeat center / cover;
+  width: 100%;
+  height: 15rem;
+  margin: 1.5rem 0;
+  padding: 0 0 clamp(1.875rem, 0.9208rem + 4.0712vw, 2.875rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.featured:nth-of-type(2){
+  background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/tablet/image-228b.jpg') no-repeat top / cover;
+}
+
+.featured:nth-of-type(3){
+  background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/mobile/image-prototype.jpg') no-repeat center / 40rem 16rem;
+}
+
+.featured a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.featured .number{
+  display: none;
+}
+
+.featured .title{
+  padding-left: clamp(1.625rem, 0.7901rem + 3.5623vw, 2.5rem); 
+  color: #fff;
+}
+
+.featured .title span{
+  display: block;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.title-32px{
+  font-size: 2rem;
+}
+
+.article-featured .button-portfolio{
+  width: 100%;
+}
+
+
+/*FOOTER*/
+
+.footer{
+  margin-top: clamp(8rem, 3.7061rem + 18.3206vw, 12.5rem);
+}
+
+.container-footer{
+  width: 100%;
+  background: #EEEFF4;
+  text-align: center;
+  padding: 5.875rem 0 2.75rem;
+  position: relative;
+}
+
+.container-logo{
+  width: 7.5rem;
+  height: 7.5rem;
+  background: #1B1D23;
+  align-content: center;
+  position: absolute;
+    top: -3.75rem; left: calc(50% - 3.75rem); 
+}
+
+.container-footer svg{
+  width: 3.625rem;
+  height: 1.5rem;
+  fill: #fff;
+}
+
+.list-footer{
+  margin: 0 auto 2rem;
+  font-size: 1.125rem;
+  color: #7D828F;
+}
+
+.li-footer:not(:nth-of-type(3)){
+  margin-bottom: 2rem;
+}
+
+.li-footer:hover{
+  color: #1B1D23;
+}
+
+.footer .button-portfolio{
+  width: 15.75rem;
+  margin: 0 auto;
+}
+
+
+
+
+/******** TABLET ********/
+
+@media screen and (min-width: 48rem){
+
+
+/*HEADER*/
+
+  .container-menu{
+    max-width: clamp(35.8125rem, -2.5446rem + 79.9107vw, 69.375rem);
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  .container-line-header{
+    display: block;
+    position: absolute;
+      top: 0; left: clamp(-4.8125rem, -2rem + -3.125vw, -3.5rem);
+    margin-top: 0;
+  }
+
+  .line-header{
+    display: inline-block;
+    background: #C8CCD8;    
+    width: 0.0625rem;
+    height: 6.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+      left: 0.8rem;
+  }
+
+  .container-line-header span{
+    display: block;
+    font-size: 1.125rem;
+    letter-spacing: 1.125rem;
+    text-transform: uppercase;
+    color: #C8CCD8;
+    writing-mode: vertical-rl;
+  }
+
+  .logo-header{
+    margin-right:  clamp(4.875rem, 3.7321rem + 2.381vw, 5.875rem);
+  }
+
+  .button-menu{
+    display: none;
+  }
+
+
+  /*MENU*/
+
+  .background{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+    background: inherit;
+    max-width: 19.5rem;
+
+    height: auto;
+
+
+    position: relative;
+      bottom: unset; right: unset;
+  }
+
+  .list-menu{
+    font-size: 1.125rem;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #7D828F;
+  }
+
+  .li-menu:not(:nth-of-type(3)){
+    margin-bottom: 0;
+  }
+
+
+/*MAIN*/
+
+  /*MAIN HEADER*/
+
+  .main-header{
+    max-width: clamp(35.8125rem, -2.5446rem + 79.9107vw, 69.375rem);
+  }
+
+  .container-main-header{
+    max-width: clamp(35.8125rem, -2.5446rem + 79.9107vw, 69.375rem);
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.4) 100%),
+                url('./assets/home/tablet/image-hero-paramour.jpg') no-repeat center / cover;
+  }  
+
+  .container-main-header .container-text-header{
+    margin: 0 0 0 clamp(3.875rem, -5.4107rem + 19.3452vw, 12rem);
+  }
+
+  .carousel{
+    display: none;
+  }
+
+  /*MAIN WELCOME*/
+
+  .article-welcome{
+    margin-top: 0;
+    padding-top: clamp(15.375rem, 13.8036rem + 3.2738vw, 16.75rem);
+  }
+
+  .container-welcome-text{
+    position: relative;
+  }
+
+  .big-welcome{
+    display: block;
+    font-size: 9.5rem;
+    letter-spacing: -0.1875rem;
+    color: #EEEFF4;
+    position: absolute;
+      top: -9.5rem; left: 0;
+  }
+
+  .line-article{
+    display: none;
+  }  
+
+  .article-welcome-title{
+    margin-top: 0;
+  }
+
+  .section-link-about{
+    max-width: clamp(35.8125rem, -2.5446rem + 79.9107vw, 69.375rem);
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 0%, 0.6) 100%),
+                url('./assets/home/tablet/image-small-team.jpg') no-repeat center / cover;
+  }
+
+
+  /*MAIN FEATURED*/
+
+  .article-featured{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, min-content);
+  }
+
+  .article-featured-title{
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 5.25rem;
+  }
+
+  .featured{
+    grid-column: 1 / -1;
+    grid-row: 2;
+    background: linear-gradient(to bottom, hsla(169, 100%, 25%, 0.4), hsla(0, 0%, 0%, 0.4) 100%),
+                url('./assets/portfolio/tablet/image-del-sol.jpg') no-repeat center / cover;
+    margin: 0 0 1.5rem;
+  }
+
+  .featured:last-of-type{
+    margin: 0;
+  }
+
+  .featured:nth-of-type(2){
+    grid-column: 1 / -1;
+    grid-row: 3;
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+                url('./assets/portfolio/tablet/image-228b.jpg') no-repeat top / cover;
+  }
+
+  .featured:nth-of-type(3){
+    grid-column: 1 / -1;
+    grid-row: 4;
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+                url('./assets/portfolio/tablet/image-prototype.jpg') no-repeat center / 40rem 16rem;
+  }
+
+  .featured .number{
+    display: block;
+    font-size: 15.625rem;
+    letter-spacing: -0.3125rem;
+    line-height: 0.5;
+    color: hsla(0, 0%, 100%, 0.5);
+    padding-right: 1.875rem;
+  }
+
+  .article-featured .button-portfolio{
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    width: 10.625rem;
+  }
+
+
+/*FOOTER*/
+
+  .container-footer{
+    background: linear-gradient(to right, #EEEFF4 80%, transparent 20%);
+    width: 48rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .container-logo{
+    position: relative;
+      top: unset; left: unset;
+  }
+
+  .list-footer{
+    width: 19.625rem;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .li-footer:not(:nth-of-type(3)){
+    margin-bottom: 0;
+  }
+
+  .footer .button-portfolio{
+    margin: 0;
+  }
+
+}
+
+
+
+/******** DESKTOP ********/
+
+@media screen and (min-width: 90rem){
+
+
+  /*MENU*/
+
+  .list-menu .li-menu.selected{
+    color: #1B1D23;
+    position: relative;
+  }
+
+  .list-menu .li-menu.selected:after{
+    content: '';
+    display: inline-block;
+    width: 1.5rem;
+    height: 0.0625rem;
+    background: #1B1D23;
+    position: absolute;
+      top: 1.5rem; left: calc(50% - 0.25rem);
+  }
+
+/*MAIN*/
+
+
+  /*MAIN HEADER*/
+
+  .container-carousel-header{
+    width: 69.375rem;
+    height: 45rem;
+    overflow-x: hidden;
+  }
+
+  .container-anim-carousel{
+    display: flex;
+    width: 69.375rem;
+    height: 45rem;
+    transition: transform ease 1.2s;
+  }
+
+  .container-main-header{
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.4) 100%),
+                url('./assets/home/desktop/image-hero-paramour.jpg') no-repeat center / cover;
+    display: block;
+    margin-right: 5rem;
+    flex: 1 0 100%;
+  } 
+
+  .container-main-header:not(:nth-of-type(1)){
+    display: block;
+  }
+
+  .container-main-header .container-text-header{
+    max-width: 34rem;
+  }  
+
+  .container-main-header:nth-of-type(2){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.4) 100%),
+                url('./assets/home/desktop/image-hero-seraph.jpg') no-repeat center / cover;
+  }
+
+  .container-main-header:nth-of-type(3){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.4) 100%),
+                url('./assets/home/desktop/image-hero-federal.jpg') no-repeat center / cover;
+  }
+
+  .container-main-header:nth-of-type(4){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.4) 100%),
+                url('./assets/home/desktop/image-hero-trinity.jpg') no-repeat center / cover;
+  }
+
+  .carousel{
+    display: flex;
+    position: relative;
+      left: -5rem;
+  }
+
+  .item{
+    width: 5rem;
+    height: 5rem;
+    background: #fff;
+    color: #7D828F;
+    font-size: 1.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item:hover{
+    cursor: pointer;
+    background: #EEEFF4;
+  }
+
+  .item.selected{
+    background: #1B1D23;
+    color: #fff;
+  }
+
+
+  /*MAIN WELCOME*/
+
+  .article-welcome{
+    width: 69.375rem;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .container-welcome-text{
+    width: 27.875rem;
+    margin: 0 0 0 11.625rem;
+  }
+
+  .big-welcome{
+    position: absolute;
+      top: -13rem; left: -11.8rem;
+    z-index: -1;
+  }
+
+  .article-welcome-title{
+    margin-bottom: 2.8rem;
+  }
+
+  .image-welcome{
+    display: block;
+    position: absolute;
+      top: 12.5rem; right: 0;
+    z-index: -1;
+  }
+
+  .section-link-about{
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.4), hsla(0, 0%, 0%, 0.6) 100%),
+                url('./assets/home/desktop/image-small-team.jpg') no-repeat center / cover; 
+  }
+
+  .container-link-text{
+    margin: 0 0 0 clamp(2rem, -9.4286rem + 23.8095vw, 12rem);
+  }
+
+
+  /*MAIN FEATURED*/
+
+  .article-featured{
+    max-width: 69.375rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, min-content); 
+    column-gap: 1.875rem;
+  }
+
+  .article-featured-title{
+    margin-bottom: 4rem;
+  }
+
+  .featured{
+    grid-column: 1;
+    grid-row: 2;
+    background: linear-gradient(to bottom, hsla(169, 100%, 25%, 0.4), hsla(0, 0%, 0%, 0.4) 100%),
+                url('./assets/portfolio/desktop/image-del-sol.jpg') no-repeat center / cover;
+    height: 35rem;
+    margin: 0;
+  }
+
+  .featured:nth-of-type(2){
+    grid-column: 2;
+    grid-row: 2;
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+                url('./assets/portfolio/desktop/image-228b.jpg') no-repeat top / cover; 
+  }
+
+  .featured:nth-of-type(3){
+    grid-column: 3;
+    grid-row: 2;
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+                url('./assets/portfolio/desktop/image-prototype.jpg') no-repeat center / cover;
+  }
+
+  .featured .number{
+    padding-right: 0;
+    margin: 5rem -0.65rem 0 0;
+    align-self: flex-start;
+  }
+
+  .article-featured .button-portfolio{
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+
+/*FOOTER*/
+
+  .container-footer{
+    width: 69.375rem;
+    background: linear-gradient(to right, #EEEFF4 90%, transparent 10%);
+  }
+
+  .container-logo{
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+
+  .container-footer svg{
+    width: 6rem;
+    height: 2.5rem;
+  }
+
+  .list-footer{
+    margin-left: -9rem;
+  }
+
+
+}

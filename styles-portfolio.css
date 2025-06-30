@@ -1,0 +1,219 @@
+
+/*MAIN*/
+
+.portfolio .main-container{
+  max-width: clamp(19.4375rem, 3.8125rem + 66.6667vw, 35.8125rem);
+  margin: 0 auto;
+}
+
+.portfolio .featured{
+  background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+            url('./assets/portfolio/mobile/image-seraph.jpg') no-repeat center / cover;
+}
+
+.portfolio .featured:nth-of-type(2){
+  background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+            url('./assets/portfolio/mobile/image-eebox.jpg') no-repeat center / cover;
+}
+
+.portfolio .featured:nth-of-type(3){
+  background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+            url('./assets/portfolio/mobile/image-federal.jpg') no-repeat center / cover;
+}
+
+.portfolio .featured:nth-of-type(4){
+  background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+            url('./assets/portfolio/mobile/image-del-sol.jpg') no-repeat center / cover;
+}
+
+.portfolio .featured:nth-of-type(5){
+  background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+            url('./assets/portfolio/mobile/image-prototype.jpg') no-repeat center / cover;
+}
+
+.portfolio .featured:nth-of-type(6){
+  background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+            url('./assets/portfolio/mobile/image-228b.jpg') no-repeat center / cover;
+}
+
+.portfolio .featured:nth-of-type(7){
+  background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+            url('./assets/portfolio/mobile/image-edelweiss.jpg') no-repeat center / cover;
+}
+
+.portfolio .featured:nth-of-type(8){
+  background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+            url('./assets/portfolio/mobile/image-netcry.jpg') no-repeat center / cover;
+}
+
+.portfolio .featured:nth-of-type(9){
+  background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+            url('./assets/portfolio/mobile/image-hypers.jpg') no-repeat center / cover;
+}
+
+.portfolio .featured:nth-of-type(10){
+  background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+            url('./assets/portfolio/mobile/image-sxiv.jpg') no-repeat center / cover;
+}
+
+.portfolio .featured:nth-of-type(11){
+  background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+            url('./assets/portfolio/mobile/image-trinity.jpg') no-repeat center / cover;
+}
+
+.portfolio .featured:nth-of-type(12){
+  background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+            url('./assets/portfolio/mobile/image-paramour.jpg') no-repeat center / cover;
+}
+
+.portfolio .featured:hover{
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
+
+/******** TABLET ********/
+
+@media screen and (min-width: 37.5rem){
+
+  /*MAIN*/
+
+  .portfolio .featured{
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/tablet/image-seraph.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(2){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/tablet/image-eebox.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(3){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/tablet/image-federal.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(4){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/tablet/image-del-sol.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(5){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/tablet/image-prototype.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(6){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/tablet/image-228b.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(7){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/tablet/image-edelweiss.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(8){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/tablet/image-netcry.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(9){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/tablet/image-hypers.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(10){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/tablet/image-sxiv.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(11){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/tablet/image-trinity.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(12){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/tablet/image-paramour.jpg') no-repeat center / cover;
+  }
+
+
+}
+
+
+/******** DESKTOP ********/
+
+@media screen and (min-width: 90rem){
+
+  .portfolio .main-container{
+    max-width: 69.375rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.875rem;
+  }
+
+  .portfolio .featured{
+    width: 21.875rem;
+    height: 35rem;
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/desktop/image-seraph.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(2){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/desktop/image-eebox.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(3){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/desktop/image-federal.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(4){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/desktop/image-del-sol.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(5){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/desktop/image-prototype.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(6){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/desktop/image-228b.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(7){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/desktop/image-edelweiss.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(8){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/desktop/image-netcry.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(9){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/desktop/image-hypers.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(10){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/desktop/image-sxiv.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(11){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/desktop/image-trinity.jpg') no-repeat center / cover;
+  }
+
+  .portfolio .featured:nth-of-type(12){
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2) 100%),
+              url('./assets/portfolio/desktop/image-paramour.jpg') no-repeat center / cover;
+  }
+
+}

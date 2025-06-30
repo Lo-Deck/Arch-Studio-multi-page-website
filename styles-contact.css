@@ -1,0 +1,333 @@
+
+.top-image{
+  width: 100%;
+}
+
+.container-text{
+  max-width: clamp(21.4375rem, 11.2395rem + 43.5115vw, 32.125rem);  
+  background: #fff;
+  padding-top: clamp(2.75rem, 0.126rem + 11.1959vw, 5.5rem);
+  padding-left: clamp(2rem, 0.4494rem + 6.6158vw, 3.625rem);
+  position: relative;
+    top: -2.8125rem;
+}
+
+.big-contact{
+  display: none;
+}
+
+.line-top-page{
+  display: none;
+}
+    
+.title-page{
+  font-size: clamp(3rem, 1.5687rem + 6.1069vw, 4.5rem);
+  letter-spacing: clamp(-0.125rem, -0.0029rem + -0.2545vw, -0.0625rem);
+  line-height: 0.9;
+  margin: 1.5rem 0 clamp(1.5rem, 0.5458rem + 4.0712vw, 2.5rem);
+}
+
+.container-text .text{
+  max-width: clamp(19.4375rem, 10.8497rem + 36.6412vw, 28.4375rem);
+}
+
+
+/*CONTACT*/
+
+.contact-details{
+  max-width: clamp(19.4375rem, 3.8125rem + 66.6667vw, 35.8125rem);
+  margin: clamp(3.5rem, -5.0878rem + 36.6412vw, 12.5rem) auto clamp(4rem, -5.542rem + 40.7125vw, 14rem);
+}
+
+.contact-details .line-top-page{
+  display: block;
+  width: 4.0625rem;
+  height: 0.0625rem;
+  background: #C8CCD8;
+  margin-bottom: clamp(3rem, 5.9313rem + -6.1069vw, 4.5rem);
+}
+
+.title-page{
+  margin-bottom: 3.5rem;
+}
+
+.details{
+  margin-bottom: 3.5rem;
+}
+
+.details address{
+  font-size: 1.125rem;
+  font-style: normal;
+  margin-bottom: 3.125rem;
+}
+
+.details address .text:nth-of-type(1){
+  color: #60636D;
+  margin-bottom: 1.5rem;
+}
+
+.button-map{
+  font-size: 1.125rem;
+}
+
+.button-map svg{
+  margin-left: 1.5rem;
+  position: relative;
+    top: 0.25rem;
+}
+
+.button-map:hover span{
+  border-bottom: 0.0625rem solid #1B1D23;
+}
+
+/*MAP*/
+
+.container-map{
+  width: 100%;
+  height: 22.9375rem;
+  max-width: 35.75rem;
+  margin: 0 auto;
+}
+
+.text-mouse-map-hover{
+  display: none;
+}
+
+/*FORM*/
+
+form{
+  max-width:  clamp(19.4375rem, 3.8721rem + 66.4122vw, 35.75rem);
+  margin: 0 auto;
+  margin-top: clamp(4.875rem, -2.1622rem + 30.0254vw, 12.25rem);
+}
+
+.form-title{
+  margin-bottom: 2.5rem;
+  padding-right: clamp(0rem, 17.8321rem + -37.1501vw, 9.125rem);
+}
+
+form .input{
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 0.0625rem solid #1B1D23;
+  font-size: 1.4rem;
+  color: #C8CCD8;
+  text-indent: 1rem;
+  margin: 0 0 0.8rem;
+  padding: 1.2rem 0;
+}
+
+textarea.input{
+  margin: 0;
+  resize: none;
+  padding-bottom: 2rem;
+}
+
+.input:focus{
+  outline: none;
+}
+
+.input:hover{
+  cursor: pointer;
+  color: #1B1D23;
+  border-bottom: 0.15rem solid #1B1D23;
+}
+
+.input.error-input{
+  color: #DF5656;  
+  border-bottom: 0.15rem solid #DF5656;
+}
+
+.container-input{
+  position: relative;
+}
+
+.container-input span.error{
+  color:  #DF5656;  
+  position: absolute;
+    top: 1.5rem; right: 0;
+}
+
+.button.button-submit{
+  width: 5rem;
+  height: 5rem;
+  background: #1B1D23;
+  margin: 0 0 0 auto;
+}
+
+.button.button-submit:hover{
+  background: #60636D;
+}
+
+
+
+
+/******** TABLET ********/
+
+@media screen and (min-width: 48rem){
+
+  .top-page{
+    max-width: clamp(35.8125rem, -2.5446rem + 79.9107vw, 69.375rem);
+    height: 45rem;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .top-image{
+    width: clamp(35.8125rem, 31.3839rem + 9.2262vw, 39.6875rem);
+  }
+
+  .container-text{
+    max-width: clamp(38.3125rem, 25.4554rem + 26.7857vw, 49.5625rem);
+    height: fit-content;
+    padding-top: clamp(5rem, -0.8571rem + 12.2024vw, 10.125rem);
+    padding-left: clamp(3.5rem, -5.5rem + 18.75vw, 11.375rem);
+    position: absolute;
+      top: 18.5rem; right: 0; 
+  }
+
+  .container-text .big-contact{
+    display: block;
+    font-size: clamp(9.5rem, 2.5rem + 14.5833vw, 15.625rem);
+    letter-spacing: -0.1875rem;
+    color: #EEEFF4;
+    margin-left: 1rem;
+    position: absolute;
+      top: clamp(-8.75rem, -0.7143rem + -8.9286vw, -5rem); left: clamp(-13.5rem, 15.4286rem + -32.1429vw, 0rem);
+  }
+
+  .line-top-page{
+    display: block;
+    width: 4.0625rem;
+    height: 0.0625rem;
+    background: #C8CCD8;
+    margin-bottom: 4.5rem;
+  }
+      
+  .container-text .text{
+    padding-bottom: 0.5rem;
+  }
+
+
+/*CONTACT*/
+
+  .details{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .details address{
+    margin-bottom: 0;
+  }
+
+  .button-map{
+    align-self: flex-end;
+  }
+
+
+/*MAP*/
+
+  .container-map{
+    max-width: 100%;
+    width: clamp(35.75rem, -2.6786rem + 80.0595vw, 69.375rem);
+    height: 35rem;
+    margin: 0 auto;
+  }
+
+  .text-mouse-map-hover{
+    content: 'Left Ctrl to zoom';
+    display: none;
+    color: #1B1D23;
+    width: 5rem;
+    height: 2rem;
+    transform: translateX(2rem);
+    position: fixed;
+    z-index: 99999;
+    cursor: grab;
+  }
+
+}
+
+
+
+/******** DESKTOP ********/
+
+@media screen and (min-width: 90rem){
+
+  .container-text{
+    position: absolute;
+      top: 14rem; right: 0; 
+  }
+
+  .title-page{
+    margin: 0 0 2.25rem;
+  }
+
+
+/*CONTACT*/
+
+  .contact-details{
+    max-width: 69.375rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-details .line-top-page{
+    margin-bottom: 4.8rem;
+  }
+
+  .details{
+    display: block;
+    margin: 5.25rem 0 0;
+    align-self: flex-end;
+  }
+
+  .details address{
+    margin: 0 0 3.125rem;
+  }
+
+
+/*FORM*/
+
+  form{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    grid-template-rows: repeat(4, min-content);
+    justify-content: space-between;
+    max-width: 69.375rem;
+  }
+
+  .form-title{
+    grid-column: 1;
+    grid-row: 1 / 3;
+    width: 21.875rem;
+    margin-top: -1rem;
+  }
+
+  form .input{
+    width: 45.625rem;
+  }
+
+  .container-input{
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .container-input:nth-of-type(2){
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .container-input:nth-of-type(3){
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .button.button-submit{
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+}
